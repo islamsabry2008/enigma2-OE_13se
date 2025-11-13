@@ -32,6 +32,7 @@ class About(Screen):
 		hddsplit = parameters.get("AboutHddSplit", 1)
 
 		AboutText = _("Hardware: ") + about.getHardwareTypeString() + "\n"
+		cpu = about.getCPUInfoString()
 		AboutText += _("CPU: ") + cpu + "\n"
 		AboutText += _("Image: ") + about.getImageTypeString() + "\n"
 		AboutText += _("OE Version: gc29a18fa39 (5.0.13)") + "\n"
